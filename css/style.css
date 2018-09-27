@@ -1,0 +1,15 @@
+body{
+  background-color: #F2BB05;
+}
+
+.bio-style{
+  font-size: 24px;
+  color: #FFEC79;
+  /* font-family: inherit; */
+  /* text-align: left; */
+  /* margin-left: 600px; */
+  /* margin-top: 300px; */
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  text-shadow: 2px 2px #7D8693;
+}
