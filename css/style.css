@@ -3,13 +3,40 @@ body{
 }
 
 .bio-style{
-  font-size: 24px;
-  color: #FFEC79;
+  font-size: 18px;
+  color: black;
   /* font-family: inherit; */
   /* text-align: left; */
   /* margin-left: 600px; */
   /* margin-top: 300px; */
   letter-spacing: 1.5px;
   line-height: 30px;
-  text-shadow: 2px 2px #7D8693;
+  /* text-shadow: 1px 1px #4A4A4A; */
+  opacity: 30%;
+  padding-bottom: 30px
+}
+
+.bio-style span{
+text-decoration: line-through;
+}
+
+.quote-style{
+  color: #FFEC79;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 1.1px;
+  text-shadow: 1px 1px #4A4A4A;
+  opacity: 30%;
+  font-style: italic;
+}
+
+.profile-pic{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.review-area{
+  padding-left: 30px;
+  padding-right: 30px;
 }
