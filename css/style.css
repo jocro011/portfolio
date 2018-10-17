@@ -3,7 +3,7 @@ body{
 }
 
 .bio-style{
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   /* font-family: inherit; */
   /* text-align: left; */
@@ -13,11 +13,17 @@ body{
   line-height: 30px;
   /* text-shadow: 1px 1px #4A4A4A; */
   opacity: 30%;
-  padding-bottom: 30px
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .bio-style span{
 text-decoration: line-through;
+}
+
+.single-review p span{
+  text-decoration: line-through;
 }
 
 .quote-style{
@@ -39,4 +45,81 @@ text-decoration: line-through;
 .review-area{
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.fa-star{
+  color: #070B3E;
+}
+
+.single-review p{
+  color: #070B3E;
+}
+
+/* .footer-area{
+  height: 400px;
+} */
+
+.medium {
+  /* border: solid 2px white; */
+  border-radius: 50px;
+  padding-right: 2vw;
+  padding-left: .3vw;
+}
+
+.footer-text{
+  float: right;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 14px;
+}
+
+.connect{
+  float: right;
+}
+
+/* .footer{
+  display: flex;
+} */
+
+.love-title{
+  padding-top: 100px;
+}
+
+.connect-title{
+  font-size: 18px;
+  padding-bottom: 4vw;
+}
+
+.profile-image{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.single-footer-widget{
+  padding-left: 8vw;
+}
+
+.resume-button{
+  padding-left: 1.1vw;
+}
+
+.logo-image{
+  height:3vw;
+}
+
+#resume{
+  padding: 40px;
+}
+
+}
+@media (max-width: 991px) {
+  .single-footer-widget{
+    padding-left: 0;
+  }
+  .connect{
+    float: none;
+    padding-top: 5vw;
+  }
 }

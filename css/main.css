@@ -2072,7 +2072,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-gap {
-  padding: 80px 0;
+  padding: 100px;
 }
 
 .section-title {
@@ -2166,7 +2166,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner-area {
-  margin-top: -56px;
+  margin-top: -64px;
   /* border-radius: 10px; */
   background: url(../img/Banner.png) center;
   background-size: cover;
@@ -2357,7 +2357,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-area {
-  background: url(../img/service-bg.jpg) center;
+  background: url(../img/freestocks-org-552875-unsplash.jpg) center;
   background-size: cover;
   border-radius: 10px;
 }
@@ -2414,15 +2414,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-area {
-  padding-top: 100px;
+  padding-top: 30px;
   background-color: #04091e;
 }
 
 h6 {
   color: #fff;
-  margin-bottom: 25px;
-  font-size: 18px;
-  font-weight: 600;
+  margin-bottom: 35px;
+  font-size: 22px;
+  font-weight: 400;
+  padding-top: 30px
 }
 
 .copy-right-text i, .copy-right-text a {
@@ -2430,7 +2431,7 @@ h6 {
 }
 
 .footer-social a {
-  padding-right: 25px;
+  /* padding-right: 25px; */
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2438,7 +2439,7 @@ h6 {
 }
 
 .footer-social a:hover i {
-  color: #8ab92d;
+  color: #F2BB05;
 }
 
 .footer-social i {
@@ -2457,14 +2458,29 @@ h6 {
 
 .single-footer-widget input {
   border: none;
-  width: 80% !important;
-  font-weight: 300;
-  background: #191919;
-  color: #777;
+  width: 100px !important;
+  height: 10px;
+  font-weight: 500;
+  background: #F2BB05;
+  color: #070B3E;
   padding-left: 20px;
-  border-radius: 0;
-  font-size: 14px;
-  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 3px 14px 25px 13px;
+}
+
+.single-footer-widget input:hover {
+  border: none;
+  width: 100px !important;
+  height: 10px;
+  font-weight: 500;
+  background: #F2BB05;
+  color: #fff;
+  padding-left: 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 3px 14px 25px 13px;
+  cursor:pointer;
 }
 
 .single-footer-widget input:focus {
@@ -2561,7 +2577,8 @@ h6 {
 }
 
 .footer-text {
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-bottom: none;
 }
 
 .footer-text a, .footer-text i {
