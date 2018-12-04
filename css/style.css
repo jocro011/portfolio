@@ -14,8 +14,6 @@ body{
   /* text-shadow: 1px 1px #4A4A4A; */
   opacity: 30%;
   padding-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .bio-style span{
@@ -113,7 +111,6 @@ text-decoration: line-through;
   padding: 40px;
 }
 
-}
 @media (max-width: 991px) {
   .single-footer-widget{
     padding-left: 0;
