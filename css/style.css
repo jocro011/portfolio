@@ -122,3 +122,9 @@ text-decoration: line-through;
     padding-top: 5vw;
   }
 }
+
+#customPadding{
+  /* padding: 0px !important; */
+  max-width: 2000px;
+  /* min-width: 1000px; */
+}
