@@ -1,5 +1,7 @@
 body{
   background-color: #F2BB05;
+  padding: 0;
+  margin: 0;
 }
 
 .bio-style{
@@ -104,7 +106,7 @@ text-decoration: line-through;
 }
 
 .logo-image{
-  height:3vw;
+  height: 2.35rem;
 }
 
 #resume{
