@@ -42,11 +42,6 @@ text-decoration: line-through;
   width: 50px;
 }
 
-.review-area{
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .fa-star{
   color: #070B3E;
 }
@@ -127,4 +122,36 @@ text-decoration: line-through;
   /* padding: 0px !important; */
   max-width: 2000px;
   /* min-width: 1000px; */
+}
+
+@media (max-width: 414px){
+  .section-gap{
+    padding: 20px;
+  }
+
+  .project-section{
+    height: 1343.78px !important;
+  }
+
+  .project-2{
+    top: 447px !important;
+  }
+
+  .project-3{
+    top: 895px !important;
+  }
+
+  .bio-style{
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .review-area{
+    padding-top: 30px;
+  }
+}
+
+.review-area{
+  padding-left: 30px;
+  padding-right: 30px;
 }
