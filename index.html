@@ -14,9 +14,10 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Portfolio</title>
+		<title>JoCro's Portfolio</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600|Dancing+Script:700|Roboto:500|Montserrat:500,600|Raleway:400,400i,500i&display=swap" rel="stylesheet">
+
 			<!--
 			CSS
 			============================================= -->
@@ -30,6 +31,7 @@
 			<link rel="stylesheet" href="css/main.css">
 			<link rel="stylesheet" href="css/style.css">
 
+
 		</head>
 		<body>
 			<div class="protfolio-wrap">
@@ -40,7 +42,7 @@
 				<nav class="navbar navbar-expand-lg  navbar-light">
 					<div class="container" id="customPadding">
 						  <a class="navbar-brand" href="index.html">
-						  	<img class="logo-image image-fluid"src="img/logo.png" alt="">
+						  	<img class="logo-image image-fluid"src="img/personal_logo-alt.svg" alt="logo">
 						  </a>
 						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						    <span class="text-white lnr lnr-menu"></span>
@@ -49,8 +51,9 @@
 						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
 						    <ul class="navbar-nav">
 								<li><a href="#home">Home</a></li>
+								<li><a href="#bio">Bio</a></li>
 								<li><a href="#portfolio">Portfolio</a></li>
-								<li><a href="#resume">Resumé</a></li>
+								<li><a href="Resume.pdf" target="_blank">Contact</a></li>
 								<!-- <li><a href="#testimonial">Testimonial</a></li> -->
 							   <!-- Dropdown -->
 							    <!-- <li class="dropdown">
@@ -74,12 +77,14 @@
 					<div class="overlay overlay-bg"></div>
 					<div class="container">
 						<div class="row fullscreen d-flex align-items-center justify-content-center">
+							<!-- <p style="font-size: 40px; font-weight: 600; color: #FFFFFF;">UX/UI Design Portfolio</p> -->
+							<!-- <p class="quote-style">
+								"Styles come and go. Good design is a language, not a style."<br>-- Massimo Vignelli
+							</p> -->
+							<p class="quote-style" style="font-weight: 500; font-size: 27px; font-family: Dancing-Script;">Design.&nbsp;&nbsp;&nbsp;<span style="letter-spacing: 10px; font-style: normal; font-family: Roboto; font-size: 24px;">Code.</span>&nbsp;&nbsp;<span style="font-style: normal; font-family: Poppins; font-weight: 400; font-size: 24px;">Repeat.</span></p>
 							<div class="banner-content col-lg-10">
 								<!-- <h5 class="text-uppercase">Now you can watch the Talent</h5> -->
-								<p class="quote-style">
-									"Do what you love and do it well."
-								  - Someone
-								</p>
+
 								<!-- <a href="#" class="primary-btn text-uppercase">Explore Now</a> -->
 							</div>
 						</div>
@@ -87,13 +92,15 @@
 				</section>
 				<!-- End banner Area -->
 				<!-- Start portfolio-area Area -->
-				<section class="portfolio-area section-gap" id="portfolio">
+				<section class="portfolio-area section-gap" id="bio">
 				  <div class="container">
 						<div class="row d-flex justify-content-center">
 							<div class="menu-content col-lg-10">
 								<div class="title text-center">
-									<p class="bio-style">Hi, there. Welcome to Joey's portfolio! I'll be your tour guide, JoeBot. If you scroll down, you'll see some of Joey's recent work in UX/UI design. From there, you can click on one of his case studies to see what goes on in Joey's head while he's hard at <span>work</span> <span>play</span> design. Have fun in there, but don't get lost! It's quite a maze -ing (see what I did there?). If you'd like to talk with Joey, you can find his resumé at the bottom of this page and inside you'll find his contact info. Peace, love, and empathy &#9996;</p>
-									<!-- <p>Who are in extremely love with eco friendly system..</p> -->
+									<img src="img/joe_bot.svg" alt="joe-bot" style="height: 150px;">
+									<p class="bio-style" style="margin-top: 50px;">Hi there, and welcome to Joey's portfolio! I'll be your tour guide, JoeBot. Just below, you'll see some of Joey's recent work in UX/UI design. From there, you can click on one of his case studies to see what goes on in Joey's head while he's hard at <span>work</span> <span>play</span> design. Have fun in there, but don't get lost! It's quite a maze -ing (see what I did there?).</p>
+									<p class="bio-style">Since graduating from Ironhack's design bootcamp, Joey's been hard at work not only learning how to make his designs better, but also how to transform them into fully functioning code (&nbsp;how do you think I was born &#129302).</p>
+									<p class="bio-style" style="margin-bottom: 50px;">If you'd like to talk with Joey, you can find his resumé at the bottom of this page where you'll find his contact info inside. Until we meet again...beep &#9996;</p>
 								</div>
 							</div>
 						</div>
@@ -108,11 +115,11 @@
 				      </ul>
 				    </div> -->
 
-				    <div class="filters-content">
+				    <div class="filters-content" id="portfolio">
 				      <div class="row grid project-section">
 				        <div class="single-portfolio col-sm-4 all">
 				          <div class="item">
-											<a href="https://medium.com/@jocro011/connecting-chords-a-musicians-app-to-success-9cf537f00e72" target="_blank"> <img src="img/third_project.png" alt="Work 1"> </a>
+											<a href="https://medium.com/@jocro011/connecting-chords-a-musicians-app-to-success-9cf537f00e72" target="_blank"> <img src="img/third_project.png" alt="Work 1" class="hvr-bob trans-ease cc-image"> </a>
 				            <div class="p-inner">
 				              <a href="https://medium.com/@jocro011/connecting-chords-a-musicians-app-to-success-9cf537f00e72" target="_blank"> <h4>Connecting Chords</h4></a>
 				              <div class="cat">Mobile Design</div>
@@ -121,7 +128,7 @@
 				        </div>
 				        <div class="single-portfolio col-sm-4 all project-2">
 				          <div class="item projects">
-				            <a href="https://medium.com/@jocro011/dont-fret-just-sweat-ux-ui-case-study-of-a-stress-management-app-d50e5c11f47f" target="_blank"> <img src="img/second_project.png" alt="Work 2"> </a>
+				            <a href="https://medium.com/@jocro011/dont-fret-just-sweat-ux-ui-case-study-of-a-stress-management-app-d50e5c11f47f" target="_blank"> <img src="img/second_project.png" alt="Work 2" class="hvr-bob trans-ease dfjs-image"> </a>
 				            <div class="p-inner">
 				              <a href="https://medium.com/@jocro011/dont-fret-just-sweat-ux-ui-case-study-of-a-stress-management-app-d50e5c11f47f" target="_blank"> <h4>Don't Fret, Just Sweat</h4> </a>
 				              <div class="cat">Mobile Design</div>
@@ -132,7 +139,7 @@
 				          <div class="item">
 										<div class="project-container">
 					            <a href="https://medium.com/@jocro011/abc-grocery-a-case-study-on-designing-an-online-grocery-shopping-experience-23ac1a2a01a1" target="_blank">
-											<img src="img/first_project.png" alt="Work 3" class="project-image"> </a>
+											<img src="img/first_project.png" alt="Work 3" class="hvr-bob trans-ease abc-image"> </a>
 										</div>
 				            <div class="p-inner">
 				              <a href="https://medium.com/@jocro011/abc-grocery-a-case-study-on-designing-an-online-grocery-shopping-experience-23ac1a2a01a1" target="_blank"> <h4>ABC Grocery</h4> </a>
@@ -238,8 +245,8 @@
 						<div class="row d-flex justify-content-center">
 							<div class="menu-content pb-60 col-lg-10">
 								<div class="title text-center love-title">
-									<h1 class="mb-10 text-white">This is what people have said about Joey.</h1>
-									<p>Who are extremely in love with him...</p>
+									<h1 class="mb-10">Read what people have said about Joey</h1>
+									<p>who are extremely in love with him...</p>
 								</div>
 							</div>
 						</div>
@@ -352,7 +359,9 @@
 										</div>
 									</div>
 									<p>
-										Joey is a great designer. He has a great eye for detail, and a creative style that is unique to him. He even learned how to code html/css in a week! He is also v handsome <span>(he told me to say that)</span>. He is very dedicated to his work, so much that he will leave the Wharf early on a Saturday night to go work on his portfolio. Crazy...
+										Joey is a great designer. He has a great eye for detail, and a creative style that is unique to him. He even learned how to code html/css in a week!
+										<!-- He is also v handsome <span>(he told me to say that)</span>.  -->
+										He is very dedicated to his work, so much that he will leave the Wharf early on a Saturday night to go work on his portfolio. Crazy...
 									</p>
 								</div>
 								<div class="single-review">
@@ -388,11 +397,12 @@
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-12">
 								<div class="single-footer-widget">
-									<h6 class="footer-title">My Resumé</h6>
-									<!-- <img src="img/resume_download_button.png" a href="Resumé.pdf" alt="Download Button" width="500" height="300"> -->
+									<a href="Resume.pdf" target="_blank" class="btn hvr-grow trans-ease ylw-btn" style="margin-top: 50px;">View my Resume</a>
+									<!-- <h6 class="footer-title">My Resumé</h6>
+									<img src="img/resume_download_button.png" a href="Resumé.pdf" alt="Download Button" width="500" height="300">
 									<div class="resume-button">
 										<input class="resume-button" type="button" name="resume-download-button" value="View" onclick="window.open('Resume.pdf','_blank')">
-									</div>
+									</div> -->
 									<!-- <button type="Download" name="resume"> Click on me!</button> -->
 									<!-- <p>Stay update with our latest</p>
 									<div class="" id="mc_embed_signup">

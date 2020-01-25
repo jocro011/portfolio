@@ -8,13 +8,13 @@
 /* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
-  background-color: #8ab92d;
-  color: #fff;
+  background-color: #235789;
+  /* color: #fff; */
 }
 
 ::selection {
-  background-color: #8ab92d;
-  color: #fff;
+  background-color: #235789;
+  /* color: #fff; */
 }
 
 ::-webkit-input-placeholder {
@@ -50,7 +50,7 @@
 }
 
 body {
-  color: #777777;
+  color: rgba(253,255,252,0.75);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -119,7 +119,7 @@ a, a:focus, a:hover {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: "Poppins", sans-serif;
-  color: #222222;
+  color: #FDFFFC;
   line-height: 1.2em !important;
   margin-bottom: 0;
   margin-top: 0;
@@ -1958,7 +1958,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-nav a:hover {
-  color: #F9E08D;
+  color: #F1D302;
 }
 
 @media (max-width: 992px) {
@@ -2168,7 +2168,7 @@ h1, h2, h3, h4, h5, h6 {
 .banner-area {
   margin-top: -64px;
   /* border-radius: 10px; */
-  background: url(../img/Banner.png) center;
+  background: url(../img/miami-skyline-i.png) center;
   background-size: cover;
   /* background-size: 100% 100%; */
 }
@@ -2181,7 +2181,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner-area .overlay-bg {
   /* border-radius: 10px; */
-  /* background-color: rgba(4, 9, 30, 0.1); */
+  background-color: rgba(4, 9, 30, 0.3);
 }
 
 .banner-content {
@@ -2390,7 +2390,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .single-review h4 {
-  color: #222;
+  color: #E3E3E3;
 }
 
 .single-review .star .checked {
@@ -2415,7 +2415,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-area {
   padding-top: 30px;
-  background-color: #04091e;
+  background-color: #040a0d;
 }
 
 h6 {
@@ -2439,11 +2439,11 @@ h6 {
 }
 
 .footer-social a:hover i {
-  color: #F2BB05;
+  color: #F1D302;
 }
 
 .footer-social i {
-  color: #cccccc;
+  color: #FDFFFC;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2461,8 +2461,8 @@ h6 {
   width: 100px !important;
   height: 10px;
   font-weight: 500;
-  background: #F2BB05;
-  color: #070B3E;
+  background: #F1D302;
+  color: #040A0C;
   padding-left: 20px;
   border-radius: 20px;
   font-size: 16px;
@@ -2474,8 +2474,9 @@ h6 {
   width: 100px !important;
   height: 10px;
   font-weight: 500;
-  background: #F2BB05;
-  color: #fff;
+  background: #F1D302;
+  box-shadow: 0px 3px 15px rgba(243, 215, 2, 0.25);
+  color: #FDFFFC;
   padding-left: 20px;
   border-radius: 20px;
   font-size: 16px;
@@ -2484,7 +2485,7 @@ h6 {
 }
 
 .single-footer-widget input:focus {
-  background-color: #191919;
+  background-color: #F1D302;
 }
 
 .single-footer-widget .bb-btn {
@@ -2523,13 +2524,13 @@ h6 {
 
 .single-footer-widget ::-moz-selection {
   /* Code for Firefox */
-  background-color: #191919 !important;
-  color: #777777;
+  background-color: #235789 !important;
+  /* color: #777777; */
 }
 
 .single-footer-widget ::selection {
-  background-color: #191919 !important;
-  color: #777777;
+  background-color: #235789 !important;
+  /* color: #777777; */
 }
 
 .single-footer-widget ::-webkit-input-placeholder {
