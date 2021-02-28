@@ -451,25 +451,13 @@ p{
         .container{
             width: 85%;
 
-            img{
-                height: 4.5rem;
-            }
-
             ul{
                 justify-content: center;
-
-                li{
-                    font-size: 1.5rem;
-                }
 
                 li:nth-child(-n+2){
                     display: none;
                     pointer-events: none;
                 }
-            }
-
-            .secondary-btn{
-                font-size: 1.5rem;
             }
 
             .fa-bars{

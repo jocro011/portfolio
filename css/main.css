@@ -481,23 +481,14 @@ p {
   .navbar .container {
     width: 85%;
   }
-  .navbar .container img {
-    height: 4.5rem;
-  }
   .navbar .container ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .navbar .container ul li {
-    font-size: 1.5rem;
-  }
   .navbar .container ul li:nth-child(-n+2) {
     display: none;
     pointer-events: none;
-  }
-  .navbar .container .secondary-btn {
-    font-size: 1.5rem;
   }
   .navbar .container .fa-bars {
     font-size: 2.4rem;
