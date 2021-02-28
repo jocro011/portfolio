@@ -449,6 +449,10 @@ p{
             ul{
                 justify-content: center;
 
+                li{
+                    font-size: 1.5rem;
+                }
+
                 li:nth-child(-n+2){
                     display: none;
                     pointer-events: none;

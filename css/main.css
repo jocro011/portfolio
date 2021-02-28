@@ -484,6 +484,9 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .navbar .container ul li {
+    font-size: 1.5rem;
+  }
   .navbar .container ul li:nth-child(-n+2) {
     display: none;
     pointer-events: none;
