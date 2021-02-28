@@ -3,12 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 1439px) {
-  html {
-    font-size: 50%;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -34,12 +28,12 @@ h3 {
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
 }
 
 p {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.7;
 }
 
@@ -389,7 +383,7 @@ p {
 }
 
 .skills-container .skills .row .skill h4 {
-  font-size: 2.1rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
@@ -415,6 +409,7 @@ p {
   font-weight: 500;
   width: 65rem;
   margin: auto;
+  font-size: 1.8rem;
   line-height: 1.7;
   margin-bottom: 6rem;
 }
@@ -463,6 +458,12 @@ p {
 
 #coffee .coffee-mug .contact-icons a:hover {
   color: #0A46A2;
+}
+
+@media (max-width: 1439px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -548,7 +549,7 @@ p {
             flex-direction: column !important;
   }
   .skills .row .skill {
-    max-width: 85%;
+    min-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
