@@ -476,6 +476,9 @@ p {
   .navbar .container {
     width: 85%;
   }
+  .navbar .container img {
+    height: 4.5rem;
+  }
   .navbar .container ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
