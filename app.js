@@ -42,7 +42,7 @@ window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
 
   if (prevScrollpos < currentScrollPos) {
-    navbar.style.top = "-100px";
+    navbar.style.top = "-200px";
   }
   
   if (prevScrollpos <= 0 || prevScrollpos > currentScrollPos) {
