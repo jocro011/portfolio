@@ -488,6 +488,9 @@ p {
     display: none;
     pointer-events: none;
   }
+  .navbar .container .secondary-btn {
+    font-size: 1.5rem;
+  }
   .navbar .container .fa-bars {
     font-size: 2.4rem;
   }
