@@ -1,0 +1,596 @@
+$offBlack: #181818;
+$primaryBlue: #3475D9;
+$hoverBlue: #0A46A2;
+$gradientBlue: linear-gradient(to right,#3475D9, #1D96FD);
+$stoneWhite: #EDEDF2;
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+@media (max-width: 1439px){
+    html{
+        font-size: 50%;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $stoneWhite;
+    font-family: 'Montserrat', sans-serif;
+    color: $offBlack;
+}
+
+h1, h2, h3, h4{
+    font-weight: 600;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 4.1rem;
+}
+
+h3{
+    font-size: 2.8rem;
+}
+
+h4{
+    font-size: 1.8rem;
+}
+
+p{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+.primary-btn{
+    background: $primaryBlue;
+    color: #ffffff;
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding: 1.7rem 2.7rem;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    transition: 0.2s ease-out;
+}
+
+.primary-btn:hover{
+    background: $hoverBlue;
+}
+
+.primary-btn:hover::before{
+    top: 0px;
+    left: 0px;
+    border: 1px solid $hoverBlue;
+}
+
+.primary-btn,
+.primary-btn::before{
+    box-sizing: border-box;
+}
+
+.primary-btn::before{
+    content: '';
+    border: 1px solid $primaryBlue;
+    border-radius: 4px;
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    top: 7px;
+    left: 7px;
+    z-index: -1;
+    transition: 0.2s ease-out;
+}
+
+.secondary-btn{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $primaryBlue;
+    padding: 1.7rem 2.5rem;
+    background-color: rgba(255,255,255,0.17);
+    border: 1px solid $primaryBlue;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.2s ease-out;
+}
+
+.secondary-btn:hover{
+    background-color: $primaryBlue;
+    color: #FFFFFF;
+}
+
+.link{
+    text-decoration: none;
+    color: $primaryBlue;
+    font-weight: 600;
+    transition: 0.2s ease-out;
+}
+
+.link:hover{
+    color: $hoverBlue;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.gone{
+    top: -100px;
+    transition: 0.2s ease-in-out;
+}
+
+.scrolled{
+    background: radial-gradient(circle, rgba(255,255,255,0.75) 60%, rgba(215,218,222,0.75) 80%);
+    backdrop-filter: blur(20px) brightness(130%);
+    box-shadow: 10px 10px 10px rgba(46,54,68,0.05);
+}
+
+.active{
+    color: $hoverBlue !important;
+}
+
+.active:hover{
+    color: $primaryBlue !important;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    padding: 2.5rem 0;
+    transition: 0.5s ease-in-out;
+
+    .container{
+        width: 100rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            height: 5rem;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50rem;
+            list-style: none;
+            padding: 0;
+
+            li{
+                font-size: 1.6rem;
+                font-weight: 600;
+
+                a{
+                    color: $offBlack;
+                    text-decoration: none;
+                    transition: 0.2s ease-out;
+
+                    i{
+                        margin-right: 8px;
+                    }
+
+                }
+
+                a:hover{
+                    color: $primaryBlue;
+                }
+
+            }
+
+        }
+
+        a{
+            i{
+                margin-right: 8px;
+            }
+        }
+
+    }
+}
+
+#hero-section{
+    text-align: center;
+    color: $offBlack;
+    background: url(../images/heroImage-min.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-height: 128rem;
+
+    .content{
+
+        position: absolute;
+        top: 20%;
+        margin: auto;
+        width: 100%;
+
+        h3{
+            margin-top: 0;
+            margin-bottom: 11px;
+        }
+    
+        h2{
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    
+        h1{
+            opacity: 0.41;
+            margin-top: 0;
+            margin-bottom: 35px;
+        }
+    
+        a{
+            margin-top: 0;
+        }
+
+    }
+
+}
+
+.concrete-bg{
+    background-image: url(../images/concrete_bg-l-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-header{
+    background-color: $offBlack;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    transition: 0.2s ease-in-out;
+
+    h3{
+        color: #ffffff;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.work-header, .skills-header{
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+}
+
+#work-light-bg{
+    background-color: rgba(255,255,255,0.75);
+}
+
+#work-dark-bg{
+    background-color: rgba(0,0,0,0.5);
+
+    h2, h4, p{
+        color: #ffffff;
+    }
+
+}
+
+.work-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100rem;
+    margin: auto;
+    padding: 11rem 0;
+    justify-content: space-between;
+
+    .work-hero{
+        width: 40rem;
+        height: auto;
+    }
+
+    .work-content{
+        width: 48%;
+
+        h2, h4, p, a{
+            margin-top: 0;
+        }
+
+        h2{
+            margin-bottom: 1rem;
+        }
+
+        h4{
+            opacity: 0.75;
+        }
+
+        h4, p{
+            margin-bottom: 3rem; 
+        }
+
+        a{
+            font-size: 1.6rem;
+        }
+
+    }
+
+}
+
+.skills-container{
+    background: radial-gradient(rgba(173,171,171,0.27), #020d1d);
+    background-blend-mode: soft-light;
+    background-image: url(/images/skills-bg-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .skills{
+        width: 100rem;
+        margin: auto;
+        padding: 11rem 0;
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: top;
+
+            .skill{
+                width: 30rem;
+                text-align: center;
+
+                img{
+                    height: 20rem;
+                    margin-bottom: -3rem;
+                }
+            
+                h4, p{
+                    color: #ffffff;
+                }
+            
+                h4{
+                    font-size: 2.1rem;
+                    margin-bottom: 1rem;
+                }
+            
+                p{
+                    font-weight: 400;
+                }
+            
+            }
+
+        }
+
+        .row.top{
+            margin-bottom: 7rem;
+        }
+
+    }
+
+}
+
+#coffee{
+
+    .coffee-mug{
+        text-align: center;
+        padding: 7.3rem 0;
+
+        h2{
+            margin-bottom: 2rem;
+            margin-top: 0;
+        }
+
+        h4{
+            font-weight: 500;
+            width: 65rem;
+            margin: auto;
+            line-height: 1.7;
+            margin-bottom: 6rem;
+        }
+
+        .contact-icons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 50rem;
+            margin: 0 auto;
+
+            a{
+                text-decoration: none;
+                color: $primaryBlue;
+                transition: 0.2s ease-out;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                i{
+                    margin-bottom: 1rem;
+                }
+
+                span{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+            }
+
+            a:hover{
+                color: $hoverBlue;
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 1024px){
+    #hero-section{
+        background-position: center;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar{
+        .container{
+            width: 85%;
+
+            ul{
+                justify-content: center;
+
+                li:nth-child(-n+2){
+                    display: none;
+                    pointer-events: none;
+                }
+            }
+
+            .fa-bars{
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    .work-container{
+        width: 85%;
+
+        img{
+            max-width: 35rem;
+        }
+    }
+
+    .skills{
+        max-width: 85%;
+
+        .skill{
+            max-width: 25rem;
+        }
+    }
+}
+
+@media (max-width: 540px){
+
+    .navbar{
+        .container{
+            width: 85%;
+
+            ul{
+                display: none;
+                pointer-events: none;
+            }
+        }
+    }
+
+    #hero-section{
+        .content{
+            width: 85%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 13%;
+
+            h2{
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .work-container{
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            margin-bottom: 3rem;
+        }
+        
+        .work-content{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .skills{
+        padding-top: 8rem !important;
+
+        .row.top{
+            margin-bottom: 0 !important;
+        }
+
+        .row{
+            flex-direction: column !important;
+
+            .skill{
+                max-width: 85%;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+            }
+        }
+    }
+
+    .coffee-mug{
+        max-width: 85%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+        h4{
+            max-width: 100%;
+        }
+
+        .contact-icons{
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width: 375px){
+    html{
+        font-size: 48%;
+    }
+}
+
+@media(max-width: 360px){
+    .navbar{
+        .container{
+            a{
+                img{
+                    height: 4rem;
+                }
+            }
+
+            .secondary-btn{
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    #hero-section{
+        .content{
+            top: 14%;
+
+            h3{
+                font-size: 2.5rem;
+            }
+
+            h2{
+                font-size: 3.5rem;
+            }
+
+            h1{
+                font-size: 2.1rem;
+                margin-bottom: 2.9rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 320px){
+    html{
+        font-size: 40%;
+    }
+}
