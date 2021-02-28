@@ -181,7 +181,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50rem;
   list-style: none;
   padding: 0;
 }
@@ -463,6 +462,12 @@ p {
 @media (max-width: 1439px) {
   html {
     font-size: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar .container ul {
+    width: 50rem;
   }
 }
 
