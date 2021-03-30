@@ -333,10 +333,6 @@ p {
   margin-bottom: 3rem;
 }
 
-.work-container .work-content a {
-  font-size: 1.6rem;
-}
-
 .skills-container {
   background: radial-gradient(rgba(173, 171, 171, 0.27), #020d1d);
   background-blend-mode: soft-light;

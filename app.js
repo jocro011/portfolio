@@ -1,12 +1,12 @@
-var navbar = document.querySelector('.navbar');
+let navbar = document.querySelector('.navbar');
 
-var workHeader = document.querySelector('.work-header');
-var sticky = workHeader.offsetTop;
-var myWork = document.querySelector('.myWork');
+let workHeader = document.querySelector('.work-header');
+let sticky = workHeader.offsetTop;
+let myWork = document.querySelector('.myWork');
 
-var skillsHeader = document.querySelector('.skills-header');
-var sticky2 = skillsHeader.offsetTop;
-var mySkills = document.querySelector('.mySkills');
+let skillsHeader = document.querySelector('.skills-header');
+let sticky2 = skillsHeader.offsetTop;
+let mySkills = document.querySelector('.mySkills');
 
 window.addEventListener('scroll', function(e) {
 
@@ -36,12 +36,15 @@ window.addEventListener('scroll', function(e) {
 })
 
 
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.pageYOffset;
+    let navHeight = navbar.offsetHeight;
+    let heroSection = document.getElementById('hero-section');
+    let heroHeight = heroSection.offsetHeight;
 
-  if (prevScrollpos < currentScrollPos) {
+  if (prevScrollpos < currentScrollPos && prevScrollpos >= (heroHeight - navHeight)) {
     navbar.style.top = "-200px";
   }
   
