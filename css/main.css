@@ -333,6 +333,28 @@ p {
   margin-bottom: 3rem;
 }
 
+.work-container .work-content .info {
+  margin: 0;
+  margin-top: 3.5rem;
+  font-size: 1.6rem;
+}
+
+.work-container .work-content .info i {
+  margin-right: 8px;
+}
+
+.work-container .work-content .info a {
+  text-decoration: none;
+  color: #3475D9;
+  font-weight: 600;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.work-container .work-content .info a:hover {
+  color: #0A46A2;
+}
+
 .skills-container {
   background: radial-gradient(rgba(173, 171, 171, 0.27), #020d1d);
   background-blend-mode: soft-light;

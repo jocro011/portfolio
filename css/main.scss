@@ -309,6 +309,27 @@ p{
             margin-bottom: 3rem; 
         }
 
+        .info{
+            margin: 0;
+            margin-top: 3.5rem;
+            font-size: 1.6rem;
+
+            i{
+                margin-right: 8px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $primaryBlue;
+                font-weight: 600;
+                transition: 0.2s ease-out;
+            }
+
+            a:hover{
+                color: $hoverBlue;
+            }
+        }
+
     }
 
 }
