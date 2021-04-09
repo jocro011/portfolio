@@ -238,11 +238,11 @@ p{
 
 }
 
-.concrete-bg{
-    background-image: url(../images/concrete_bg-l-min.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+// .concrete-bg{
+//     background-image: url(../images/concrete_bg-l-min.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
 
 .section-header{
     background-color: $offBlack;
@@ -265,10 +265,17 @@ p{
 
 #work-light-bg{
     background-color: rgba(255,255,255,0.75);
+    background-image: url(../images/project_bg-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #work-dark-bg{
     background-color: rgba(0,0,0,0.5);
+    background-image: url(../images/project_bg-dark-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
 
     h2, h4, p{
         color: #ffffff;
@@ -340,6 +347,7 @@ p{
     background-image: url(/images/skills-bg-min.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
     .skills{
         width: 100rem;
@@ -538,6 +546,10 @@ p{
             width: 100%;
             text-align: center;
         }
+    }
+
+    .skills-container{
+        background-position: -330px;
     }
 
     .skills{

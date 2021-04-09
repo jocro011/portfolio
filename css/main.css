@@ -248,12 +248,6 @@ p {
   margin-top: 0;
 }
 
-.concrete-bg {
-  background-image: url(../images/concrete_bg-l-min.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .section-header {
   background-color: #181818;
   height: 10rem;
@@ -279,10 +273,17 @@ p {
 
 #work-light-bg {
   background-color: rgba(255, 255, 255, 0.75);
+  background-image: url(../images/project_bg-light.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #work-dark-bg {
   background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../images/project_bg-dark-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 #work-dark-bg h2, #work-dark-bg h4, #work-dark-bg p {
@@ -361,6 +362,7 @@ p {
   background-image: url(/images/skills-bg-min.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .skills-container .skills {
@@ -558,6 +560,9 @@ p {
   .work-container .work-content {
     width: 100%;
     text-align: center;
+  }
+  .skills-container {
+    background-position: -330px;
   }
   .skills {
     padding-top: 8rem !important;
