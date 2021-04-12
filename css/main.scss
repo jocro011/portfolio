@@ -147,7 +147,8 @@ p{
     transition: 0.5s ease-in-out;
 
     .container{
-        width: 100rem;
+        width: 90%;
+        max-width: 100rem;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -163,6 +164,7 @@ p{
             justify-content: space-between;
             list-style: none;
             padding: 0;
+            width: 50%;
 
             li{
                 font-size: 1.6rem;
@@ -204,6 +206,7 @@ p{
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     max-height: 128rem;
 
@@ -237,12 +240,6 @@ p{
     }
 
 }
-
-// .concrete-bg{
-//     background-image: url(../images/concrete_bg-l-min.jpg);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-// }
 
 .section-header{
     background-color: $offBlack;
@@ -287,7 +284,8 @@ p{
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 100rem;
+    width: 90%;
+    max-width: 100rem;
     margin: auto;
     padding: 11rem 0;
     justify-content: space-between;
@@ -350,7 +348,8 @@ p{
     background-position: center;
 
     .skills{
-        width: 100rem;
+        width: 90%;
+        max-width: 100rem;
         margin: auto;
         padding: 11rem 0;
 
@@ -359,6 +358,7 @@ p{
             flex-direction: row;
             justify-content: space-between;
             align-items: top;
+            flex-wrap: wrap;
 
             .skill{
                 width: 30rem;
@@ -455,23 +455,13 @@ p{
     }
 }
 
-@media (min-width: 1024px){
-    .navbar{
-        .container{
-            ul{
-                width: 50rem;
-            }
-        }
-    }
-}
+// @media (max-width: 1024px){
+//     #hero-section{
+//         background-position: center;
+//     }
+// }
 
-@media (max-width: 1024px){
-    #hero-section{
-        background-position: center;
-    }
-}
-
-@media (max-width: 768px){
+@media (max-width: 800px){
     .navbar{
         .container{
             width: 85%;
@@ -508,7 +498,7 @@ p{
     }
 }
 
-@media (max-width: 540px){
+@media (max-width: 680px){
 
     .navbar{
         .container{
@@ -537,6 +527,7 @@ p{
     .work-container{
         flex-direction: column;
         align-items: center;
+        max-width: 55rem;
 
         img{
             margin-bottom: 3rem;
@@ -560,13 +551,14 @@ p{
         }
 
         .row{
-            flex-direction: column !important;
+            flex-wrap: wrap;
 
             .skill{
-                min-width: 100%;
+                min-width: 40%;
+                max-width: 100%;
                 display: flex;
                 flex-direction: column;
-                margin: auto;
+                margin: 0 auto;
             }
         }
     }
@@ -587,9 +579,13 @@ p{
     }
 }
 
-@media(max-width: 375px){
+@media(max-width: 465px){
     html{
         font-size: 48%;
+    }
+
+    .skill{
+        min-width: 100%;
     }
 }
 

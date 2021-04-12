@@ -153,7 +153,8 @@ p {
 }
 
 .navbar .container {
-  width: 100rem;
+  width: 90%;
+  max-width: 100rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,6 +184,7 @@ p {
           justify-content: space-between;
   list-style: none;
   padding: 0;
+  width: 50%;
 }
 
 .navbar .container ul li {
@@ -217,6 +219,7 @@ p {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   max-height: 128rem;
 }
@@ -301,7 +304,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 100rem;
+  width: 90%;
+  max-width: 100rem;
   margin: auto;
   padding: 11rem 0;
   -webkit-box-pack: justify;
@@ -366,7 +370,8 @@ p {
 }
 
 .skills-container .skills {
-  width: 100rem;
+  width: 90%;
+  max-width: 100rem;
   margin: auto;
   padding: 11rem 0;
 }
@@ -385,6 +390,8 @@ p {
   -webkit-box-align: top;
       -ms-flex-align: top;
           align-items: top;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .skills-container .skills .row .skill {
@@ -485,19 +492,7 @@ p {
   }
 }
 
-@media (min-width: 1024px) {
-  .navbar .container ul {
-    width: 50rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  #hero-section {
-    background-position: center;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .navbar .container {
     width: 85%;
   }
@@ -527,7 +522,7 @@ p {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 680px) {
   .navbar .container {
     width: 85%;
   }
@@ -553,6 +548,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 55rem;
   }
   .work-container img {
     margin-bottom: 3rem;
@@ -571,13 +567,12 @@ p {
     margin-bottom: 0 !important;
   }
   .skills .row {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .skills .row .skill {
-    min-width: 100%;
+    min-width: 40%;
+    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -585,7 +580,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
   }
   .coffee-mug {
     max-width: 85%;
@@ -606,9 +601,12 @@ p {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 465px) {
   html {
     font-size: 48%;
+  }
+  .skill {
+    min-width: 100%;
   }
 }
 
