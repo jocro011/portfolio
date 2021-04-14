@@ -261,14 +261,13 @@ p{
 }
 
 #work-light-bg{
-    background-color: rgba(255,255,255,0.75);
     background-image: url(../images/project_bg-light.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #work-dark-bg{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     background-image: url(../images/project_bg-dark-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -340,9 +339,10 @@ p{
 }
 
 .skills-container{
-    background: radial-gradient(rgba(173,171,171,0.27), #020d1d);
-    background-blend-mode: soft-light;
-    background-image: url(/images/skills-bg-min.png);
+    // background: radial-gradient(rgba(173,171,171,0.27), #020d1d);
+    // background-blend-mode: soft-light;
+    background-color: rgba(0,0,0,0.8);
+    background-image: url(/images/skills-bg-bricks.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -455,12 +455,6 @@ p{
     }
 }
 
-// @media (max-width: 1024px){
-//     #hero-section{
-//         background-position: center;
-//     }
-// }
-
 @media (max-width: 800px){
     .navbar{
         .container{
@@ -540,7 +534,7 @@ p{
     }
 
     .skills-container{
-        background-position: -330px;
+        background-position: -460px;
     }
 
     .skills{
