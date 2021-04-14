@@ -222,6 +222,7 @@ p {
   background-position: center;
   position: relative;
   max-height: 128rem;
+  min-height: 90rem;
 }
 
 #hero-section .content {
